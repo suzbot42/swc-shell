@@ -23,7 +23,7 @@ def get_avg_discharge_rates(data):
     discharge_rates = dict()
     for record in data:
         station = record[1]
-        discharge = float(record[2])
+        discharge = float(record[2])   #leaving a garbage comment
         discharge_rates[station] = discharge_rates.get(station, []) + [discharge]
     avg_discharge_rates = dict()
     for station in discharge_rates:
