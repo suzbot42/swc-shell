@@ -1,0 +1,78 @@
+    1  mkdir code_boot_camp_17
+    2  ls
+    3  cd code_boot_camp_17/
+    4  ls
+    5  ls
+    6  notepad data.txt &
+    7  cp data.txt data_copy.txt
+    8  ls
+    9  mkdir temp
+   10  ls
+   11  mv data_copy.txt temp/
+   12  ls
+   13  cd temp/
+   14  ls
+   15  cd ..
+   16  ls
+   17  cd temp/
+   18  mv data_copy.txt data_copy2.txt
+   19  ls
+   20  cd ..
+   21  ls
+   22  mv data.txt data_loganriver_2013.txt
+   23  ls
+   24  mkdir backup
+   25  cp data_loganriver_2013.txt backup/
+   26  ls
+   27  cd backup/
+   28  ls
+   29  cd ..
+   30  mv backup/ backup_loganriver
+   31  ls
+   32  cd backup_loganriver/
+   33  ls
+   34  mv data_loganriver_2013.txt data_loganriver_2013_backup.txt 
+   35  ls
+   36  cd ../..
+   37  ls
+   38  mv code_boot_camp_17/ SoftwareCarpentry
+   39  ls
+   40  cd SoftwareCarpentry/
+   41  ls
+   42  ls
+   43  cd temp/
+   44  ls
+   45  rm data_copy2.txt 
+   46  ls
+   47  cd ..
+   48  rmdir temp/
+   49  ls
+   50  clear
+   51  ls
+   52  clear
+   53  ls
+   54  cat data_littlebearriver_2013.txt 
+   55  sort data_littlebearriver_2013.txt 
+   56  sort --help
+   57  sort -k 3 data_littlebearriver_2013.txt 
+   58  sort -k 3  -n data_littlebearriver_2013.txt 
+   59  sort -k 3  -n data_littlebearriver_2013.txt > sorted_rates.txt
+   60  ls
+   61  cat sorted_rates.txt 
+   62  tail sorted_rates.txt 
+   63  tail -1 sorted_rates.txt 
+   64  head -1 sorted_rates.txt 
+   65  sort -k 3  -n -r data_littlebearriver_2013.txt 
+   66  ll
+   67  ll
+   68  tail -1 sorted_rates.txt 
+   69  sort -k 3  -n -r data_littlebearriver_2013.txt 
+   70  tail -1 sorted_rates.txt 
+   71  sort -k 3  -n data_littlebearriver_2013.txt | head -1
+   72  sort -k 3  -n -r data_littlebearriver_2013.txt | head -1
+   73  ls
+   74  python avg_discharge_rate.py 
+   75  python avg_discharge_rate.py data_littlebearriver_2013.txt  | sort -k 2 -n | tail -1
+   76  clear
+   77  history 
+   78  history > myanalysis_2013_07_17.txt
